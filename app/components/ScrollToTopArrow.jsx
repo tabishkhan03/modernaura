@@ -1,8 +1,16 @@
 "use client"
-import Image from "next/image";
 import React, { useState } from "react";
 
 const ScrollToTopArrow = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
