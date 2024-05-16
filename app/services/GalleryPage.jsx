@@ -37,10 +37,10 @@ const GalleryPage = () => {
 
   return (
     <>
-      <section class="py-24 ">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
-          <div class="grid gap-2.5 lg:pb-16 pb-10">
-            <h2 class="w-full text-center text-gray-900 text-4xl font-bold font-manrope leading-normal">
+      <section className="py-24 ">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
+          <div className="grid gap-2.5 lg:pb-16 pb-10">
+            <h2 className="w-full text-center text-gray-900 text-4xl font-bold font-manrope leading-normal">
               Our Gallery
             </h2>
           </div>
