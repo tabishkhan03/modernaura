@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Gallerypage from "./GalleryPage";
 import TestimonialSlider from "../../components/TestimonialSlider"
-import CTA from "@/components/Cta";
-import ScrollToTopArrow from "@/components/ScrollToTopArrow";
-import WhatsAppLogo from "@/components/WhatsAppLogo";
-import AboutComponent from "@/components/AboutComponent";
+import CTA from "../components/Cta";
+import ScrollToTopArrow from "../components/ScrollToTopArrow";
+import WhatsAppLogo from "../components/WhatsAppLogo";
+import AboutComponent from "../components/AboutComponent";
 export default function Gallery() {
   return (
     <>

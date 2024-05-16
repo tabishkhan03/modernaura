@@ -1,12 +1,12 @@
 import Image from 'next/image'
 // import { TbArrowUpRight } from "react-icons/tb"
-import CaruolseClinet from "@/components/CaruolseClinet";
-import CatalogueSection from "@/components/CatalogueSection";
+import CaruolseClinet from "../components/CaruolseClinet";
+import CatalogueSection from "../components/CatalogueSection";
 import Link from "next/link";
-import  TestimonialSlider  from '@/components/TestimonialSlider';
-import CTA from '@/components/Cta';
-import ScrollToTopArrow from '@/components/ScrollToTopArrow';
-import WhatsAppLogo from '@/components/WhatsAppLogo';
+import  TestimonialSlider  from '../components/TestimonialSlider';
+import CTA from '../components/Cta';
+import ScrollToTopArrow from '../components/ScrollToTopArrow';
+import WhatsAppLogo from '../components/WhatsAppLogo';
 import AboutPage from "./aboutPage";
 export default function About() {
   return (

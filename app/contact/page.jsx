@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import axios from "axios";
-import ScrollToTopArrow from "@/components/ScrollToTopArrow";
+import ScrollToTopArrow from "../components/ScrollToTopArrow";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
