@@ -49,7 +49,7 @@ export default function AboutComponent() {
   return (
     <>
       <section className="text-gray-600 body-font">
-        <div className="container px-4 py-24 mx-auto">
+        <div className="container px-4 py-16 mx-auto sm:py-24">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-semibold text-black">
               What we offer to our clients

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-.embla {
+/* .embla {
     overflow: hidden;
   }
   .embla__container {
@@ -17,8 +17,30 @@
 
   .embla__slide img {
     width: 100%;
+  } */
+
+  .embla {
+    overflow: hidden;
+    width: 100%;
   }
-
-
+  
+  .embla__container {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .embla__slide {
+    position: relative;
+    min-width: 100%;
+    overflow: hidden;
+  }
+  
+  .embla__slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
 
   
