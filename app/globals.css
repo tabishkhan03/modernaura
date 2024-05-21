@@ -2,24 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* .embla {
-    overflow: hidden;
-  }
-  .embla__container {
-    display: flex;
-  }
-  .embla__slide {
-    flex: 0 0 100%;
-    min-width: 0;
-    height: 650px;
-  }
-
-  .embla__slide img {
-    width: 100%;
-  } */
-
-  .embla {
+  /* .embla {
     overflow: hidden;
     width: 100%;
   }
@@ -41,6 +24,31 @@
     display: block;
     object-fit: cover;
   }
-  
+   */
 
+   .embla {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .embla__container {
+    display: flex;
+    transition: transform 0.3s ease;
+    will-change: transform;
+  }
+  
+  .embla__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .embla__slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
   
