@@ -2,6 +2,8 @@
 import { useState } from "react";
 import axios from "axios";
 import ScrollToTopArrow from "../components/ScrollToTopArrow";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -24,14 +26,25 @@ export default function Contact() {
     e.preventDefault();
     try {
       const response = await axios.post("/api/sendmail", formData);
-      console.log(response);
+      if (response.status == "200") {
+        toast.success("Email sent successfully");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      }
     } catch (error) {
-      console.error("Error in sending mail", error);
+      toast.error("Error in sending mail try again later")
+      // console.error("Error in sending mail", error);
     }
   };
 
   return (
     <>
+      <ToastContainer/>
       <div className="relative w-full h-[350px]">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -157,7 +170,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h2 className="font-bold text-lg">PHONE</h2>
-                        <p><a href="tel:+91 8452937018">8452937018</a></p>
+                        <p><a href="tel:+91 8452937018">+91 8452937018</a></p>
                       </div>
                     </div>
                   </div>

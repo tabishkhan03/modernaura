@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { TbArrowNarrowRight } from "react-icons/tb";
 
+
 export default function CatalogueSection() {
     const items = [
         {
