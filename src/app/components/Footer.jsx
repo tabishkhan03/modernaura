@@ -11,8 +11,8 @@ const Footer = () => {
           {/* Logo and Navigation */}
           <div className="flex flex-col md:flex-row space-between justify-between w-full mb-8 md:mb-0">
             <div className='flex'>
-                <img src="/logo.png" alt="Modern Aura Logo" className="mb-6" />
-                <p className='p-2 mb-0 text-2xl font-bold font-color-two'>ModernAura</p>
+              <img src="/logo.png" alt="Modern Aura Logo" className="mb-6" />
+              <p className='p-2 mb-0 text-2xl font-bold font-color-two'>ModernAura</p>
             </div>
             <nav className="flex space-x-4 md:space-x-8 text-sm md:text-base lg:text-xl">
               <Link href="/" className="hover:text-[#FF6B00] transition-colors">Home</Link>
@@ -44,9 +44,15 @@ const Footer = () => {
 
         {/* Social Icons */}
         <div className="flex space-x-6 mb-8">
-          <a href="#" className="text-2xl hover:text-[#FF6B00] transition-colors"><FaInstagram /></a>
-          <a href="#" className="text-2xl hover:text-[#FF6B00] transition-colors"><FaWhatsapp /></a>
-          <a href="#" className="text-2xl hover:text-[#FF6B00] transition-colors"><MdEmail /></a>
+          <a href="https://www.instagram.com/moder_naura" className="text-2xl hover:text-[#FF6B00] transition-colors">
+            <FaInstagram />
+          </a>
+          <a href="https://wa.me/918432917018" className="text-2xl hover:text-[#FF6B00] transition-colors">
+            <FaWhatsapp />
+          </a>
+          <a href="mailto:modernaura09@gmail.com" className="text-2xl hover:text-[#FF6B00] transition-colors">
+            <MdEmail />
+          </a>
         </div>
 
         {/* Copyright */}

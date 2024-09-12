@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
           Why Choose Us
         </h2>
         <p className="text-center text-lg md:text-xl leading-relaxed">
-          At ModernAura, we're passionate about transforming houses into dream homes. We are a team of experienced interior
+          At ModernAura, we&apos;re passionate about transforming houses into dream homes. We are a team of experienced interior
           designers and architects who collaborate to create spaces that are not only stunning but also functional and reflect
           your unique style.
         </p>

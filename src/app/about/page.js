@@ -17,7 +17,7 @@ const page = () => {
       {/* Content */}
       <div className="container mx-auto px-4 z-10 font-maven-pro">
         <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold text-white mb-4">
-          We've made a life that<br />will change you.
+          We&apos;ve made a life that<br />will change you.
         </h1>
         <p className="text-md sm:text-lg md:text-xl text-white mb-8 max-w-2xl">
           To create beautiful, functional, and sustainable living

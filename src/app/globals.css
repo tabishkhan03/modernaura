@@ -101,11 +101,11 @@
   color: var(--secondary-font-color);
 }
 .font-manjari-400 {
-  font-family: "Manjari" ;
+  font-family: "Manjari",system-ui ;
   font-weight: 400;
 }
 .font-marcellus-400 {
-  font-family: "Marcellus" !important;
+  font-family: "Marcellus",system-ui;
   font-weight: 400;
 }
 .font-maven-pro{
@@ -121,6 +121,7 @@ body {
   background-color: var(--background-color);
   color: var(--primary-font-color);
   position: relative;
+  font-family: system-ui, Roboto ;
 }
 
 

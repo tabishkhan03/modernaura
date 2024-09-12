@@ -13,7 +13,7 @@ const Mission = () => {
                     Our Mission
                 </p>
                 <h2 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 leading-snug">
-                Our our mission is to craft spaces that reflect our client's  <span className="text-orange-500">unique personalities and lifestyles.</span>
+                Our our mission is to craft spaces that reflect our client&apos;s  <span className="text-orange-500">unique personalities and lifestyles.</span>
                 </h2>
                 <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed">
                     Modern Aura is a premier interior design firm specializing in Commercial, Residential, and Showroom interiors. Celebrated for our expertise, we excel in delivering comprehensive turnkey projects, managing every aspect from the initial design concept to the final construction phase. With a passion for innovative design and a keen eye for detail, we transform spaces into inspiring environments that reflect the unique vision and style of our clients.

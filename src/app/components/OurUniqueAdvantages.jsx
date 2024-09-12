@@ -50,7 +50,7 @@ const OurUniqueAdvantages = () => {
           Why Choose Us?
         </h2>
         <p className="text-center text-lg md:text-xl leading-relaxed mb-12 max-w-4xl mx-auto">
-          At ModernAura, we're passionate about transforming houses into dream homes. We are a team of experienced
+          At ModernAura, we&apos;re passionate about transforming houses into dream homes. We are a team of experienced
           interior designers and architects who collaborate to create spaces that are not only stunning but also functional
           and reflect your unique style.
         </p>

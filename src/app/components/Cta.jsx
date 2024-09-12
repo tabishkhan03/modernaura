@@ -20,7 +20,7 @@ const Cta = () => {
                             Breathe Life into Your Space
                         </h1>
                         <p className="text-center text-lg md:text-xl text-white mb-8 ">
-                            Let's Connect!
+                            Let&apos;s Connect!
                         </p>
                     </div>
                 </div>

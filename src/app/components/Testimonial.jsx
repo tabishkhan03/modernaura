@@ -88,12 +88,12 @@ const testimonials = [
     quote: "I absolutely loved the work. I would definitely recommend Modern Aura to anyone. They very professional and made the entire experience amazing."
   },
   {
-    name: "Jane Doe",
-    quote: "Working with Modern Aura was a game-changer for our business. Their expertise and dedication are unmatched."
+    name: "Qayem Raza ",
+    quote: "It was really good to get my home interior done by MODERNAURA and was really great to get it completed before 8 days of actual handover date...Good Job Guys...Really appreciate ASHRAF and the team for their hard work and dedication. "
   },
   {
-    name: "John Smith",
-    quote: "The team at Modern Aura went above and beyond our expectations. I couldn't be happier with the results."
+    name: "Khan Shahfahad Faizan Ahmed ",
+    quote: "Modern Aura  has made our flat into a home, a home which we always wanted. They understood us and gave us our dream home. The journey with them has been an amazing and smooth one for sure. "
   }
 ]
 
@@ -130,7 +130,7 @@ export default function TestimonialCarousel() {
                 <h3 className="text-lg sm:text-xl font-color-two font-semibold">{testimonial.name}</h3>
               </div>
               <p className="text-center text-sm sm:text-base md:text-lg mb-6 sm:mb-8 text-white">
-                "{testimonial.quote}"
+              &quot;{testimonial.quote}&quot;
               </p>
             </SplideSlide>
           ))}

@@ -5,7 +5,7 @@ const FounderProfile = () => {
         <div className="about-container flex flex-col lg:flex-row justify-between items-center !pb-0">
             {/* Image Section */}
             <div className="lg:w-1/2 flex flex-col items-center justify-center relative mb-8 lg:mb-0 order-1 lg:order-2">
-                <img className="founder-img w-full max-w-[200px] sm:max-w-[250px] lg:max-w-[300px]" src="/founder.png" alt="Founder Image" />
+                <img className="founder-img w-full max-w-[200px] sm:max-w-[250px] lg:max-w-[300px]" src="/founder.jpg" alt="Founder Image" />
                 {/* Founder Name */}
                 <div className="mt-4 text-center">
                     <h2 className="text-white text-xl sm:text-2xl font-bold">Ashraf Qureshi</h2>
