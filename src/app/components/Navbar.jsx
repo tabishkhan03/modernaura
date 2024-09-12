@@ -10,6 +10,7 @@ const Navbar = () => {
   const [isDesignsOpen, setIsDesignsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // New state to manage the mobile menu toggle
   const navLink = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
@@ -28,12 +29,12 @@ const Navbar = () => {
   const isDesignPage = designLinks.some(({ link }) => pathname.startsWith(link));
 
   const Openmenu = () => {
-    document.querySelector(".phone-menu")?.classList.add("phone-menu-open");
-  }
+    setIsMenuOpen(true);
+  };
 
   const Closemenu = () => {
-    document.querySelector(".phone-menu")?.classList.remove("phone-menu-open");
-  }
+    setIsMenuOpen(false);
+  };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -48,25 +49,15 @@ const Navbar = () => {
     };
   }, []);
 
-  const handleMouseEnter = () => {
-    setIsDesignsOpen(true);
-  };
-
-  const handleMouseLeave = () => {
-    setTimeout(() => {
-      if (!dropdownRef.current.matches(':hover')) {
-        setIsDesignsOpen(false);
-      }
-    }, 100);
-  };
-
   return (
     <>
       <nav className='fixed top-0 left-0 w-full p-4'>
         <div className="navbar custom-container">
           <div className="logo-div">
             <figure className='w-full'>
-              <img src="/logo.png" alt="LOGO" className="w-full" />
+              <Link href="/">
+                <img src="/logo.png" alt="LOGO" className="w-full" />
+              </Link>
             </figure>
           </div>
           <ul className="nav-list hidden lg:flex">
@@ -80,10 +71,10 @@ const Navbar = () => {
                 </li>
               );
             })}
-            <li className="nav-items relative" 
-                ref={dropdownRef}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}>
+            <li className="nav-items relative"
+              ref={dropdownRef}
+              onMouseEnter={() => setIsDesignsOpen(true)}
+              onMouseLeave={() => setIsDesignsOpen(false)}>
               <button className={`flex items-center ${isDesignPage ? 'active' : ''}`}>
                 Designs
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -111,7 +102,9 @@ const Navbar = () => {
           </button>
         </div>
       </nav>
-      <section className="phone-menu w-full">
+
+      {/* Mobile Menu */}
+      <section className={`phone-menu w-full ${isMenuOpen ? 'phone-menu-open' : ''}`}>
         <ul className="phone-menu-nav-list">
           <li>
             <div className='flex justify-between items-center'>
@@ -137,28 +130,18 @@ const Navbar = () => {
               </li>
             );
           })}
-          <li>
-            <button 
-              onClick={() => setIsDesignsOpen(!isDesignsOpen)} 
-              className={`w-full text-left block py-2 ${isDesignPage ? 'active' : ''}`}
-            >
-              Designs
-            </button>
-            {isDesignsOpen && (
-              <ul className="pl-4">
-                {designLinks.map(({ name, link }) => {
-                  const isActive = pathname === link;
-                  return (
-                    <li key={name}>
-                      <Link href={link} className={`block py-2 ${isActive ? 'text-[#ff8c39]' : ''}`} onClick={Closemenu}>
-                        {name}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            )}
-          </li>
+
+          {/* Add direct design links here */}
+          {designLinks.map(({ name, link }) => {
+            const isActive = pathname === link;
+            return (
+              <li key={name}>
+                <Link className={`${isActive ? 'active w-full block' : 'w-full block'}`} onClick={Closemenu} href={link}>
+                  {name}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </section>
     </>
@@ -166,3 +149,4 @@ const Navbar = () => {
 }
 
 export default Navbar;
+
