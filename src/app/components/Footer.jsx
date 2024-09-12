@@ -14,7 +14,7 @@ const Footer = () => {
               <img src="/logo.png" alt="Modern Aura Logo" className="mb-6" />
               <p className='p-2 mb-0 text-2xl font-bold font-color-two'>ModernAura</p>
             </div>
-            <nav className="flex space-x-4 md:space-x-8 text-sm md:text-base lg:text-xl">
+            <nav className="z-10 flex space-x-4 md:space-x-8 text-sm md:text-base lg:text-xl">
               <Link href="/" className="hover:text-[#FF6B00] transition-colors">Home</Link>
               <Link href="/about" className="hover:text-[#FF6B00] transition-colors">About Us</Link>
               <Link href="/contact" className="hover:text-[#FF6B00] transition-colors">Contact</Link>
