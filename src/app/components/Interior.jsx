@@ -1,10 +1,10 @@
 import Image from 'next/image'
 
 const rooms = [
-  { name: 'LIVING ROOM', image: '/about/interior1.jpg' },
+  { name: 'BALCONY', image: '/about/interior1.jpg' },
   { name: 'BED ROOM', image: '/about/interior2.jpg' },
-  { name: 'BATH ROOM', image: '/about/interior3.jpg' },
-  { name: 'BALCONY', image: '/about/interior4.jpg' },
+  { name: 'LIVING ROOM', image: '/about/interior3.jpg' },
+  { name: 'BATH ROOM', image: '/about/interior4.jpg' },
 ]
 
 export default function Interior() {
