@@ -38,7 +38,7 @@ const Footer = () => {
             <p className="mb-1">Shop no 30,plot no.24,shreepat plaza, Sector-25,</p>
             <p className="mb-2">Seawoods,Navi Mumbai</p>
             <p className="mb-1">modernaura09@gmail.com</p>
-            <p>+91 8432917018</p>
+            <p>+91 8452937018</p>
           </div>
         </div>
 
@@ -47,7 +47,7 @@ const Footer = () => {
           <a href="https://www.instagram.com/moder_naura" className="text-2xl hover:text-[#FF6B00] transition-colors">
             <FaInstagram />
           </a>
-          <a href="https://wa.me/918432917018" className="text-2xl hover:text-[#FF6B00] transition-colors">
+          <a href="https://wa.me/918452937018" className="text-2xl hover:text-[#FF6B00] transition-colors">
             <FaWhatsapp />
           </a>
           <a href="mailto:modernaura09@gmail.com" className="text-2xl hover:text-[#FF6B00] transition-colors">
