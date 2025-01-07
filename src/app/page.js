@@ -1,5 +1,6 @@
 import React from "react";
 import { About,WhatWeOffer,Gallery, Testimonial } from "./components";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,9 +22,9 @@ export default function Home() {
               Bespoke Interior and Architectural Designs
             </span>
           </h1>
-          <button className="border-2 border-white bg-transparent text-white px-6 sm:px-8 py-2 text-xs sm:text-sm hover:bg-white hover:text-black transition duration-300">
+          <Link href="/designs/bedroom" className="border-2 border-white bg-transparent text-white px-6 sm:px-8 py-2 text-xs sm:text-sm hover:bg-white hover:text-black transition duration-300">
             EXPLORE
-          </button>
+          </Link>
         </div>
       </div>
       <About img="/home/aboutus-img.png" />

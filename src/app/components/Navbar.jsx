@@ -82,7 +82,7 @@ const Navbar = () => {
                 </svg>
               </button>
               {isDesignsOpen && (
-                <ul className="absolute top-full left-0 bg-[#121212] shadow-md mt-2 py-2 rounded-md z-50">
+                <ul className="absolute top-full left-0 bg-[#121212] shadow-md py-2 rounded-md z-50">
                   {designLinks.map(({ name, link }) => {
                     const isActive = pathname === link;
                     return (
