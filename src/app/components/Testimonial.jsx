@@ -84,15 +84,15 @@ import '@splidejs/react-splide/css'
 
 const testimonials = [
   {
-    name: "Aleksandr Ivanovich",
+    name: "Iqram Shaikh",
     quote: "I absolutely loved the work. I would definitely recommend Modern Aura to anyone. They very professional and made the entire experience amazing."
   },
   {
-    name: "Hiroshi Takahashi",
+    name: "Qayem Raza ",
     quote: "It was really good to get my home interior done by MODERNAURA and was really great to get it completed before 8 days of actual handover date...Good Job Guys...Really appreciate ASHRAF and the team for their hard work and dedication. "
   },
   {
-    name: "Luca Moretti",
+    name: "Khan Shahfahad Faizan Ahmed ",
     quote: "Modern Aura  has made our flat into a home, a home which we always wanted. They understood us and gave us our dream home. The journey with them has been an amazing and smooth one for sure. "
   }
 ]
